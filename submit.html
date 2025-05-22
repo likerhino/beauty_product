@@ -17,7 +17,7 @@
       const email = document.getElementById('email').value;
       const amount = document.getElementById('amount').value;
 
-      const res = await fetch('/purchase', {
+      const res = await fetch('http://52.1.152.235//purchase', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, amount })
